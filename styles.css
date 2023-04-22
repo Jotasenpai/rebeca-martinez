@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.image {
+  background-image: url('LTD.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2; /* ajusta la opacidad según tu preferencia */
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.books-container {
+	display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;    
+    align-items: baseline;
+}
+
+.book-box {
+	display: flex;
+  flex-direction: column;
+  margin: 20px;
+  min-width: 300px;
+  min-height: 400px;
+  width: 30vh;
+  background-color: white;
+  border-radius: 10px;
+  /*box-shadow: 0 0px 9px rgba(0, 0, 0, 0.2);*/
+  font-size: 1.8rem;
+}
+
+.book-box img {
+  height: 46vh;
+  background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+.book-box::before {
+  content: "";
+  margin-left: -1px;
+  min-width: 300px;
+  min-height: 400px;
+  width: 30.13vh;
+  height: 47%;
+  position: absolute;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0));
+}
+
+.book-box h2 {
+  margin-top: -100px;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*background: linear-gradient(to bottom, rgb(50 50 50 / 52%), rgb(255 255 255 / 12%));
+    background-color: #725a6c;
+    color: white;*/
+  z-index: 2;
+}
+
+.book-box a {	
+	text-decoration: none;
+	width: 100%;
+	background: linear-gradient(to bottom, rgb(50 50 50 / 24%), rgb(255 255 255 / -1%));
+    background-color: #a593a0;
+    color: white;
+	/*color: white;
+    background-color: #f78847;*/
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-box p {
+  margin: 20px;
+  z-index: 2;
+  font: 75%/1.3em "Open sans",Helvetica,Arial,sans-serif;
+}
+
+.enlace{
+	width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.enlaces{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    overflow: hidden;
+}
