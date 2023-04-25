@@ -65,7 +65,7 @@ main {
   min-width: 301px;
   min-height: 400px;
   width: 30.2vh;
-  height: 47%;
+  height: 55%;
   position: absolute;
   background: linear-gradient(to top, rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0));
 }
